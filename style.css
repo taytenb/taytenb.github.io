@@ -40,7 +40,7 @@
   
 body{
     background-image: url('./assets/bgdaymountains.png'), url('./assets/bgday.png');
-    background-attachment: scroll;
+    background-attachment: fixed, scroll;
     background-position: center top, center bottom;
     background-size: cover, cover;
     background-repeat: no-repeat, no-repeat;
@@ -48,6 +48,13 @@ body{
     position: relative;
     font-family: 'Poppins', sans-serif;
     background-color: #2c6484;
+}
+.is-ios body {
+    background-attachment: scroll !important; 
+    background-position: center center !important;
+    background-size: auto 100vh !important; 
+    -webkit-background-size: auto 100vh !important;
+    background-repeat: no-repeat !important;
 }
 html{
     scroll-behavior: smooth;

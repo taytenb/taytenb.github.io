@@ -1,3 +1,4 @@
+
 function toggleMenu() {
     const menu = document.querySelector('.menulinks');
     const icon = document.querySelector('.hamicon');
@@ -37,6 +38,9 @@ function initScrollAnimations() {
 }
 
 function initParallax() {
+    if(/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+        return;
+    }
     window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
         document.body.style.backgroundPositionY = -(scrolled * 0.05) + 'px';
@@ -87,6 +91,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (darkModeEnabled || localStorage.getItem('darkMode') === null) {
         document.body.classList.add('dark-mode');
         localStorage.setItem('darkMode', 'true');
+    }
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    if (isIOS) {
+        document.body.classList.add("is-ios");
     }
     initScrollAnimations();
     initParallax();
