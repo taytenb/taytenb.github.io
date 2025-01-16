@@ -1,0 +1,205 @@
+@media screen and (max-width: 1150px){
+  .about-text-container::before {
+    left: -5rem;
+    right: -5rem;
+  }
+  .about-text-1{
+    font-size: 1rem;
+  }
+  .about-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .about-img {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about-pic {
+    width: 100%;
+    max-width: 600px; 
+    height: auto;
+  }
+}
+@media screen and (max-width: 1050px) {
+  #navbar {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+  }
+
+  section {
+    margin: 0 2rem;
+    padding-top: 2vh; 
+  }
+
+  .navlinks {
+    gap: 1.5rem;
+    font-size: 1.3rem;
+  }
+  
+}
+
+
+@media screen and (max-width: 768px) {
+  /* General text sizing */
+  .navlinks {
+    font-size: 1.2rem;
+  }
+
+  #profile {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: auto; 
+    padding-bottom: 2rem; 
+  }
+
+  .pic {
+      width: 250px; 
+      height: auto;
+      justify-content: center;
+  }
+  .pic img{
+      width: 100%;
+      height: auto;
+  }
+  .profile-text {
+    text-align: center;
+  }
+  .profile-p2 {
+    font-size: 1.5rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .about-text-1{
+    font-size: 1rem;
+  }
+
+  /* About section in column layout */
+  .about-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .about-img {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about-pic {
+    width: 100%;
+    max-width: 400px; /* prevent image from becoming too large */
+    height: auto;
+  }
+
+  /* Experience / Skills container in stacked view */
+  #experience {
+      height: auto; /* Let it expand naturally on smaller screens */
+      padding-top: 15rem;
+  }
+  
+  .experience-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Projects layout */
+  .all-projects {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .project-card {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  /* Contact */
+  #contacts {
+    height: auto; /* Let it expand naturally on smaller screens */
+    padding-bottom: 2rem;
+  }
+  .contact-info-upper-container {
+    flex-direction: column;
+    gap: 0rem;
+    width: 90%;
+  }
+  .arrow{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  
+  body{
+    font-size: 0.8rem;
+  }
+  section {
+    margin: 0 1rem;
+  }
+
+  /* Navbar / Hamburger spacing */
+  #hamburger-nav {
+    margin: 0 1rem;
+  }
+
+  /* Adjust heading sizes */
+  .title {
+    font-size: 1.8rem;
+  }
+  .experience-1 {
+    font-size: 1.5rem;
+  }
+
+  /* Buttons */
+  .btn {
+    width: 100%;
+  }
+
+  /* Images in profile/about */
+  .pic {
+      width: 250px;
+      height: auto;
+      justify-content: center
+  }
+  .pic img {
+      width: 100%;
+      height: auto;
+  }
+  .about-pic {
+    max-width: 300px;
+  }
+  .arrow {
+    right: -0.5rem; /* adjust arrow if it’s overlapping content */
+    bottom: 2rem;
+    width: 1.5rem;  /* smaller arrow icon */
+    height: auto;
+  }
+  .details {
+    flex-direction: column; /* Stack them vertically */
+    align-items: center;
+  }
+  .experience,
+  .education {
+    width: 70%; /* Make them full-width to stack nicely */
+  }
+  #about {
+    margin-bottom: 4rem; /* Add extra space below about section */
+    position: relative;
+  }
+  .arrow{
+    display: none;
+  }
+  /* Footer */
+  footer {
+    margin: rem;
+  }
+  .navlinks {
+    font-size: 1.1rem;
+  }
+  .about-text-1{
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id = "navbar">
+        <div class = "logo"> Tayten Bennetsen </div>
+        <div>
+            <ul class = "navlinks">
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#experience">Experience</a></li>
+                <li><a href = "#projects">Projects</a></li>
+                <li><a href = "#contacts">Contacts</a></li>
+            </ul>
+        </div>
+        <img src = "./assets/darkmode (1).png" alt = "moon icon" class = "icon" onclick="toggleDarkMode()"/>
+    </nav>
+    <nav id = "hamburger-nav">
+        <div class = "logo"> Tayten Bennetsen </div>
+        <div id = "hamburger">
+            <div class = "hamicon" onclick = "toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class = "menulinks">
+                <ul>
+                    <li><a href = "#about" onclick = "toggleMenu()">About</a></li>
+                    <li><a href = "#experience" onclick = "toggleMenu()">Experience</a></li>
+                    <li><a href = "#projects" onclick = "toggleMenu()">Projects</a></li>
+                    <li><a href = "#contacts" onclick = "toggleMenu()">Contacts</a></li>
+                </ul>
+                <img src = "./assets/darkmode (1).png" alt = "moon icon" class = "icon" onclick="toggleDarkMode()"/>
+            </div>
+        </div>
+    </nav>
+    <section id = "profile">
+        <div class = "pic">
+            <img src = "./assets/website-profilepic.png" alt = "profile pic"/>
+        </div>
+        <div class = "profile-text">
+            <p class = "profile-p1">Hello I'm</p>
+            <h1 class = "title"> Tayten Bennetsen</h1>
+            <p class = "profile-p2">Full-Stack Developer</p>
+            <div class = "buttons">
+                <button 
+                class = "btn btn-color-2" 
+                onclick = "window.open('./assets/currWebsiteResume1-15-2025.pdf')">
+                Download Resume</button>
+                <button 
+                class = "btn btn-color-1" 
+                onclick = "location.href = './#contacts'">
+                Contacts</button>
+            </div>
+            <div class = "socials">
+                <img src = "./assets/linkedin.png" alt = "linkedin" class = "icon" onclick = "window.open('https://www.linkedin.com/in/taytenb/')"/>
+                <img src = "./assets/github.png" alt = "github" class = "icon" onclick = "window.open('https://github.com/taytenb/')"/>
+            </div>
+        </div>
+
+    </section>
+    <section id = "about">
+        <p class = "about-p1">Get To Know More</p>
+        <h1 class = "title">About Me</h1>
+        <div class = "about-container">
+            <div class = "about-img">
+                <img src = "./assets/about-pic.png" 
+                alt = "About picture" 
+                class = "about-pic"/>
+            </div>
+            <div class = "about-details">
+                <div class = "details">
+                    <div class = "experience">
+                        <img src = "./assets/experience.png" 
+                        alt = "experience icon" 
+                        class = "icon"/>
+                        <h3 class = "about-title">Experience</h3>
+                        <p class = "about-text">2 years<br/>Full-Stack Development</p>
+                    </div>
+                    <div class = "education">
+                        <img src = "./assets/education.png" 
+                        alt = "education icon" 
+                        class = "icon"/>
+                        <h3 class = "about-title">Education</h3>
+                        <p class = "about-text">Rice University c.o 2027<br/>BS in Computer Science<br />BA in Cognitive Science</p>
+                    </div>
+                </div>
+                <div class = "about-text-container">
+                    <p class = "about-text-1">Growing up in Alaska's rugged landscape, I learned the value of resilience and creative problem-solving early on. Whether navigating steep ski trails or tackling complex coding challenges, I bring that same adventurous spirit to software engineering. Now at Rice University, I'm pursuing dual degrees in Computer Science and Cognitive Science, combining technical expertise with a deep understanding of how people think and interact with technology.</p>
+                    <p class = "about-text-1">My journey has taken me from developing accessibility tools at Wostmann & Associates to building AI-powered music platforms at Melody AI. When I'm not immersed in code, you'll find me carving through fresh powder on ski slopes, competing on the basketball court or soccer field, or exploring new corners of the globe. This balance of technical focus and active lifestyle fuels my innovative thinking.</p>
+                    <p class = "about-text-1">I thrive on creating elegant solutions to complex problems, whether it's optimizing backend architectures or building comprehensive security research tools. My dual background in computer science and cognitive science, combined with my adventurous spirit, drives me to push the boundaries of what's possible in technology.</p>
+                </div>
+            </div>
+        </div>
+        <img src = "./assets/arrow.png" 
+        alt = "Arrow icon" 
+        class = "icon arrow" 
+        onclick = "location.href='./#experience'"/>
+    </section>
+
+    <section id = "experience">
+        <p class = "about-p1">Explore My</p>
+        <h1 class = title> Experience</h1>
+        <div class="experience-container">
+            <div class="experience-card">
+                <div class="experience-details">
+                    <h1 class = "experience-1">Field Work</h1>
+                    <div class = "article">
+                        <div class = "article-details">
+                            <h2>Sofware Engineer Intern</h2>
+                            <div>
+                                <h3>Melody AI</h3>
+                                <h4>December 2024 - Present</h4>
+                                <p  class = "about-text">Developed a comprehensive music licensing platform using Next.js and Firebase that streamlines artist discovery and integration for supervisors. Built scalable backend infrastructure in Python and implemented OpenAI API integrations for automated workflows while working in an agile environment.</p>
+                            </div>
+                        </div>
+                        <div class = "article-details">
+                            <h2>Software Engineer Intern</h2>
+                            <div>
+                                <h3>Wostmann & Associates</h3>
+                                <h4>April 2024 - August 2024</h4>
+                                <p class = "about-text">Designed and developed SightSpeak Reader, a C++ application that enables real-time text-to-speech and visual highlighting across Microsoft applications through WinAPI integration. Implemented efficient keyboard shortcuts, thread pooling, and Tesseract OCR to achieve 98% text extraction accuracy while reducing processing latency by 28ms.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "skills-card">
+                <div class = "skills-details">
+                    <h1 class = "experience-1">Skills</h1>
+                    
+                    <div class = "programming">
+                        <h2 class = "skill-title">Programming</h2>
+                        <div class = programming-skills>
+                            <div class = "skill" data-level="Advanced">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>C/C++</h3>
+                            </div>
+                            <div class = "skill" data-level="Intermediate">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>JavaScript</h3>
+                            </div>
+                            <div class = "skill" data-level="Intermediate">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>TypeScript</h3>
+                            </div>
+                            <div class = "skill" data-level="Advanced">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>Java</h3>
+                            </div>
+                            <div class = "skill" data-level="Intermediate">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>Python</h3>
+                            </div>
+                            <div class = "skill" data-level="Intermediate">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>React</h3>
+                            </div>
+                            <div class = "skill" data-level="Basic">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>React Native</h3>
+                            </div>
+                            <div class = "skill" data-level="Intermediate">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>HTML</h3>
+                            </div>
+                            <div class = "skill" data-level="Basic">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>CSS</h3>
+                            </div>
+                            </div>
+                            <div class = "skill" data-level="Intermediate">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>SQL</h3>
+                            </div>
+                            <div class = "skill" data-level="Intermediate">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>R</h3>
+                            </div>
+                            <div class = "skill" data-level="Basic">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>Pandas</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "tools">
+                        <h2 class = "skill-title">Tools</h2>
+                        <div class = "programming-skills">
+                            <div class = "skill" data-level="Intermediate">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>MongoDB</h3>
+                            </div>
+                            <div class = "skill" data-level="Intermediate">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>Supabase</h3>
+                            </div>
+                            <div class = "skill" data-level="Basic">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>Firebase</h3>
+                            </div>
+                            <div class = "skill" data-level="Intermediate">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>Next.js</h3>
+                            </div>
+                            <div class = "skill" data-level="Intermediate">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>Node.js</h3>
+                            </div>
+                            <div class = "skill" data-level="Basic">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>Express.js</h3>
+                            </div>
+                            <div class = "skill" data-level="Intermediate">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>Git</h3>
+                            </div>
+                            <div class = "skill" data-level="Basic">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>OpenAI</h3>
+                            </div>
+                            <div class = "skill" data-level="Basic">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>Anthropic</h3>
+                            </div>
+                            <div class = "skill" data-level="Basic">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>LangChain</h3>
+                            </div>
+                            <div class = "skill" data-level="Intermediate">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>Auth0</h3>
+                            </div>
+                            <div class = "skill" data-level="Basic">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>PyTorch</h3>
+                            </div>
+                            <div class = "skill" data-level="Basic">
+                                <img src = "./assets/checkmark.png" 
+                                alt = "Experience icon" 
+                                class = "icon"/>
+                                <h3>OCR</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src = "./assets/arrow.png" 
+        alt = "Arrow icon" 
+        class = "icon arrow" 
+        onclick = "location.href='./#projects'"/>
+    </section>
+    
+    <section id = "projects">
+        <p class = "about-p1">Check Out My Recent</p>
+        <h1 class = "title">Projects</h1>
+        <div class = "projects-container">
+            <div class = "all-projects">
+                <div class = "project-card">
+                    <div class = "project-details">
+                        <img src = "./assets/booking expanded - hifi.png"
+                        alt = "project 1"
+                        class = "project-img">
+                        <h2 class = "experience-1 project-title">Bunkmate</h2>
+                        <h3 class = "project-description">
+                            A centralized housing platform for Rice University students to find and list sublets and off-campus housing, built with Next.js and Supabase. 
+                        </h3>
+                        <div class = "btn-container">
+                            <button
+                            class = "btn btn-color-2 project-btn"
+                            onclick = "location.href = 'https://github.com/rice-apps/bunkmate-but-better'">
+                            Github
+                            </button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class = "project-card">
+                    <div class = "project-details">
+                        <img src = "./assets/nvdchatbot.png"
+                        alt = "project 2"
+                        class = "project-img">
+                        <h2 class = "experience-1 project-title">NVD Chatbot</h2>
+                        <h3 class = "project-description">
+                            An AI-powered security research tool combining NVD data with LangChain for natural language vulnerability analysis and threat assessment. 
+                        </h3>
+                        <div class = "btn-container">
+                            <button
+                            class = "btn btn-color-2 project-btn"
+                            onclick = "location.href = 'https://github.com/taytenb/nvd_chatbot'">
+                            Github
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <div class = "project-card">
+                    <div class = "project-details">
+                        <img src = "./assets/pillora.png"
+                        alt = "project 1"
+                        class = "project-img">
+                        <h2 class = "experience-1 project-title">Pillora</h2>
+                        <h3 class = "project-description">
+                            Award-winning medication management app using RAG and OpenFDA API to improve medication adherence through AI-driven assistance.
+                        </h3>
+                        <div class = "btn-container">
+                            <button
+                            class = "btn btn-color-2 project-btn"
+                            onclick = "location.href = 'https://github.com/taytenb/HR_Pillora'">
+                            Github
+                            </button>
+                            <button class = "btn btn-color-2 project-btn"
+                            onclick = "location.href = 'https://devpost.com/software/pillora'">
+                            Hackathon
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class = "project-card">
+                    <div class = "project-details">
+                        <img src = "./assets/reader (2).png"
+                        alt = "project 1"
+                        class = "project-img">
+                        <h2 class = "experience-1 project-title">SightSpeak Reader</h2>
+                        <h3 class = "project-description">
+                            Open-source screen reader utilizing WinAPI and UI Automation to provide accessibility solutions for visually impaired Windows users. 
+                        </h3>
+                        <div class = "btn-container">
+                            <button
+                            class = "btn btn-color-2 project-btn"
+                            onclick = "location.href = 'https://github.com/taytenb/SightSpeak-Reader'">
+                            Github
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <div class = "project-card">
+                    <div class = "project-details">
+                        <img src = "./assets/taxi.png"
+                        alt = "project 1"
+                        class = "project-img">
+                        <h2 class = "experience-1 project-title">Taxi Data Analysis</h2>
+                        <h3 class = "project-description">
+                            Comprehensive analysis of 6M+ taxi rides using Python, R and SQL, revealing pricing patterns and customer behavior through advanced visualizations.
+                        </h3>
+                        <div class = "btn-container">
+                            <button
+                            class = "btn btn-color-2 project-btn"
+                            onclick = "location.href = 'https://github.com/jackdzi/405final'">
+                            Github
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <div class = "project-card">
+                    <div class = "project-details">
+                        <img src = "./assets/rdt-ticketing.png"
+                        alt = "project 1"
+                        class = "project-img">
+                        <h2 class = "experience-1 project-title">RDT Ticketing</h2>
+                        <h3 class = "project-description">
+                            Full-stack ticketing platform for Rice Dance Theatre featuring secure payments, seat selection, and administrative event management. 
+                        </h3>
+                        <div class = "btn-container">
+                            <button
+                            class = "btn btn-color-2 project-btn"
+                            onclick = "location.href = 'https://github.com/taytenb/rdt-backend'">
+                            Github
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <div class = "project-card">
+                    <div class = "project-details">
+                        <img src = "./assets/birthday.png"
+                        alt = "project 1"
+                        class = "project-img">
+                        <h2 class = "experience-1 project-title">Birthday Calendar</h2>
+                        <h3 class = "project-description">
+                            Cross-platform mobile application built with React Native and MongoDB for managing and tracking important dates and celebrations. 
+                        </h3>
+                        <div class = "btn-container">
+                            <button
+                            class = "btn btn-color-2 project-btn"
+                            onclick = "location.href = 'https://github.com/taytenb/BirthdayCalendar'">
+                            Github
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <div class = "project-card">
+                    <div class = "project-details">
+                        <img src = "./assets/haverycrime.png"
+                        alt = "project 1"
+                        class = "project-img">
+                        <h2 class = "experience-1 project-title">Harvey Crime Analysis</h2>
+                        <h3 class = "project-description">
+                            Statistical analysis of crime patterns during Hurricane Harvey using Random Forest Regression, achieving 93.2% accuracy in predictions. 
+                        </h3>
+                        <div class = "btn-container">
+                            <button
+                            class = "btn btn-color-2 project-btn"
+                            onclick = "location.href = 'https://colab.research.google.com/drive/1DMWvcP_a9gOBnfpqNdRP8QavVPdbgbT_?usp=sharing'">
+                            Colab
+                            </button>
+                            <button
+                            class = "btn btn-color-2 project-btn"
+                            onclick = "location.href = 'https://docs.google.com/presentation/d/1eutXz-mNbM1kZSddZ843qVpiwznTVMFdFKAs5tKo7yg/edit?usp=sharing'">
+                            Presentation
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <img src = "./assets/arrow.png" 
+        alt = "Arrow icon" 
+        class = "icon arrow" 
+        onclick = "location.href='./#contacts'"/>
+    </section>
+
+    <section id = "contacts">
+        <p class = "about-p1">Get In Touch</p>
+        <h1 class = "title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <img
+                src="./assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+              />
+              <p><a href="mailto:tayten.b907l@gmail.com">tayten.b907@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img
+                src="./assets/linkedin.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+              />
+              <p><a href="https://www.linkedin.com/in/taytenb/">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img
+                src="./assets/github.png"
+                alt="Github icon"
+                class="icon contact-icon"
+              />
+              <p><a href="https://github.com/taytenb/">Github</a></p>
+          </div>
+          <img src = "./assets/uparrow.png" 
+        alt = "Arrow icon" 
+        class = "icon arrow" 
+        onclick = "window.scrollTo({top: 0, behavior: 'smooth'})"/>
+    </section>
+    <footer>
+        <nav>
+          <div class="footer">
+            <ul class="navlinks">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p class = "about-p1">Copyright &#169; 2024 Tayten Bennetsen. All Rights Reserved.</p>
+      </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
