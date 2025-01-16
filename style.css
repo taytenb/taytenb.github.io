@@ -25,8 +25,8 @@
 
 
 :root {
-    --bg-day: url('../assets/daymountains.png');
-    --bg-night: url('../assets/nightmountains.png');
+    --bg-day: url('./assets/daymountains.png');
+    --bg-night: url('./assets/nightmountains.png');
 }
 
 
@@ -39,7 +39,7 @@
 
   
 body{
-    background-image: url('../assets/daymountains.png'), url('../assets/day.png');
+    background-image: url('./assets/daymountains.png'), url('./assets/day.png');
     background-attachment: fixed, scroll;
     background-position: center top, center bottom;
     background-size: cover, cover;
@@ -632,7 +632,7 @@ section{
 
 /* Dark Mode */
 body.dark-mode {
-    background-image: var(--bg-night), url('../assets/night.png');
+    background-image: var(--bg-night), url('./assets/night.png');
 }
 .dark-mode {
     background-color: #121212;
