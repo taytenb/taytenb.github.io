@@ -40,7 +40,7 @@
   
 body{
     background-image: url('./assets/bgdaymountains.png'), url('./assets/bgday.png');
-    background-attachment: fixed, scroll;
+    background-attachment: scroll;
     background-position: center top, center bottom;
     background-size: cover, cover;
     background-repeat: no-repeat, no-repeat;
