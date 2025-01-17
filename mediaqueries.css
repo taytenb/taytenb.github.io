@@ -94,11 +94,7 @@
     height: auto;
   }
 
-  /* Experience / Skills container in stacked view */
-  #experience {
-      height: auto; /* Let it expand naturally on smaller screens */
-      padding-top: 15rem;
-  }
+  
   
   .experience-container {
     flex-direction: column;
