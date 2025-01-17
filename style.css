@@ -42,7 +42,7 @@ body{
     background-image: url('./assets/bgdaymountains.png'), url('./assets/bgday.png');
     background-attachment: fixed, scroll;
     background-position: center top, center bottom;
-    background-size: cover, cover;
+    background-size: cover;
     background-repeat: no-repeat, no-repeat;
     min-height: 100vh;
     position: relative;
@@ -50,12 +50,27 @@ body{
     background-color: #2c6484;
 }
 .is-ios body {
-    background-attachment: scroll !important; 
-    background-position: center center !important;
-    background-size: auto 100vh !important; 
-    -webkit-background-size: auto 100vh !important;
-    background-repeat: no-repeat !important;
+    background: none !important;
 }
+.fixed-bg{
+    display: none;
+}
+.is-ios .fixed-bg {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; 
+    background: url('./assets/bgdaymountains.png') center center no-repeat;
+    background-size: cover; 
+}
+.dark-mode .fixed-bg {
+    background: url('./assets/bgnightmountains.png') center center no-repeat;
+    background-size: cover; 
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -518,14 +533,12 @@ section{
     padding: 1.5rem;
     background: #fafafa;
     border-radius: 2rem;
-    border: rgb(163, 163, 163) 0.1rem solid;
+    border: rgb(163, 163, 163) 0.15rem solid;
     text-align: center;
-    transition: all 300ms ease-in-out cubic-bezier(0.4, 0, 0.2, 1);
     transform-origin: center;
     z-index: 1;
 }
 .project-card:hover{
-    transform: translateY(-15px);
     border: #2a2a2a 0.15rem solid;
     box-shadow: 0 30px 20px rgba(0,0,0,0.2);
     z-index: 2
